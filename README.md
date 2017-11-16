@@ -4,10 +4,11 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/zupago/webpush/master.svg?style=flat-square)](https://travis-ci.org/zupago/webpush)
 [![StyleCI](https://styleci.io/repos/110965391/shield)](https://styleci.io/repos/110965391)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/fb1bfea0-c328-42fe-895c-3db92d09ca03.svg?style=flat-square)](https://insight.sensiolabs.com/projects/fb1bfea0-c328-42fe-895c-3db92d09ca03)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/30d57a0c-06db-45e4-97fc-2e164cbca54f.svg?style=flat-square)](https://insight.sensiolabs.com/projects/30d57a0c-06db-45e4-97fc-2e164cbca54f)
 [![Quality Score](https://img.shields.io/scrutinizer/g/zupago/webpush.svg?style=flat-square)](https://scrutinizer-ci.com/g/zupago/webpush)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/zupago/webpush/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/zupago/webpush/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/zupago/webpush.svg?style=flat-square)](https://packagist.org/packages/zupago/webpush)
+
 
 This package makes it easy to send web push notifications with Laravel.
 
