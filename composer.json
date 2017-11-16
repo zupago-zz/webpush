@@ -27,11 +27,6 @@
             "NotificationChannels\\webpush\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "NotificationChannels\\webpush\\Test\\": "tests"
-        }
-    },
     "extra": {
         "laravel": {
             "providers": [
@@ -42,7 +37,6 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "test": "vendor/bin/phpunit"
