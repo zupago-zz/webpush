@@ -1,6 +1,2 @@
 tools:
     external_code_coverage: true
-
-language: php
-
-tests: true
