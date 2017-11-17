@@ -23,7 +23,6 @@ trait HasPushSubscriptions
      * @return \NotificationChannels\WebPush\PushSubscription
      */
     public function updatePushSubscription($endpoint, $key = null, $token = null, $dd = null, $push_subscription_id = null, $name = null, $language = null, $device = null, $country = null)
-
     {
         $subscription = PushSubscription::findByEndpoint($endpoint);
         if ($subscription && $this->pushSubscriptionBelongsToUser($subscription)) {
