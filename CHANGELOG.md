@@ -1,5 +1,10 @@
 # Changelog
 
-All Notable changes to `ZuPago/zupago-push` will be documented in this file
+All Notable changes to `zupago/webpush` will be documented in this file
 
-## 2.1.0 - 2017-11-15
+## 3.0.1 - 2017-11-16
+
+- Removed `id` and `create` methods from `WebPushMessage`.
+- Added `badge`, `dir`, `image`, `lang`, `renotify`, `requireInteraction`, `tag`, `vibrate`, `data` methods on `WebPushMessage`.
+
+

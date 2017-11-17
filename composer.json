@@ -1,5 +1,5 @@
 {
-    "name": "zupago/webpush",
+      "name": "zupago/webpush",
     "description": "Web Push Notifications driver for Laravel.",
     "homepage": "https://github.com/zupago/webpush",
     "license": "MIT",
@@ -24,19 +24,25 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\webpush\\": "src"
+            "NotificationChannels\\WebPush\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\WebPush\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "NotificationChannels\\webpush\\WebPushServiceProvider"
+                "NotificationChannels\\WebPush\\WebPushServiceProvider"
             ]
         }
     },
     "config": {
         "sort-packages": true
     },
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "test": "vendor/bin/phpunit"

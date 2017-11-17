@@ -1,9 +1,12 @@
 <?php
 
 namespace NotificationChannels\WebPush;
+//use Emadadly\LaravelUuid\Uuids;
 
 trait HasPushSubscriptions
 {
+    // use Uuids;
+    //     public $incrementing = false;
     /**
      * Get the user's subscriptions.
      *
@@ -22,13 +25,19 @@ trait HasPushSubscriptions
      * @param  string|null $token
      * @return \NotificationChannels\WebPush\PushSubscription
      */
-    public function updatePushSubscription($endpoint, $key = null, $token = null)
+    public function updatePushSubscription($endpoint, $key = null, $token = null, $dd = null, $push_subscription_id = null, $name = null, $language = null, $device = null, $country = null)
+
     {
         $subscription = PushSubscription::findByEndpoint($endpoint);
-
         if ($subscription && $this->pushSubscriptionBelongsToUser($subscription)) {
             $subscription->public_key = $key;
             $subscription->auth_token = $token;
+            $subscription->browser = $dd;
+            $subscription->push_subscription_id = $push_subscription_id ;
+            $subscription->name = $name;
+            $subscription->language = $language;
+            $subscription->device = $device;
+            $subscription->country = $country;
             $subscription->save();
 
             return $subscription;
@@ -53,7 +62,7 @@ trait HasPushSubscriptions
      */
     public function pushSubscriptionBelongsToUser($subscription)
     {
-        return (int) $subscription->user_id === (int) $this->getAuthIdentifier();
+        return (int) $subscription->user_id === 1;
     }
 
     /**
