@@ -122,8 +122,6 @@ class WebPushMessage
     /**
      * Set an action.
      *
-     * @param  string $title
-     * @param  string $action
      * @return $this
      */
     public function action($value)
