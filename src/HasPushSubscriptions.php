@@ -1,12 +1,9 @@
 <?php
 
 namespace NotificationChannels\WebPush;
-//use Emadadly\LaravelUuid\Uuids;
 
 trait HasPushSubscriptions
 {
-    // use Uuids;
-    //     public $incrementing = false;
     /**
      * Get the user's subscriptions.
      *
