@@ -33,7 +33,7 @@ trait HasPushSubscriptions
             $subscription->public_key = $key;
             $subscription->auth_token = $token;
             $subscription->browser = $dd;
-            $subscription->push_subscription_id = $push_subscription_id ;
+            $subscription->push_subscription_id = $push_subscription_id;
             $subscription->name = $name;
             $subscription->language = $language;
             $subscription->device = $device;
